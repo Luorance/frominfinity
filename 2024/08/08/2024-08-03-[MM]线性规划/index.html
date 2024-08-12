@@ -872,13 +872,13 @@ mjx-container[display="true"] + br {
                     <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="prev"
                         rel="prev"
-                        href="/2024/08/09/2024-08-09-%5BMCM%5D%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E5%8F%8A%E6%A0%87%E5%87%86%E5%BD%A2%E5%BC%8F/"
+                        href="/2024/08/08/2024-08-08-%5BLatex%5DLatex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">&lt;MM&gt;整数线性规划(ILP)基本原理及标准形式</span>
+                                <span class="post-nav-title-item">&lt;Latex&gt;Latex数学公式</span>
                                 <span class="post-nav-item">Prev posts</span>
                             </span>
                         </a>
@@ -888,10 +888,10 @@ mjx-container[display="true"] + br {
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/08/08/2024-08-08-%5BLatex%5DLatex%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"
+                        href="/2024/08/08/hello-world/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">&lt;Latex&gt;Latex数学公式</span>
+                                <span class="post-nav-title-item">Hello World</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -915,48 +915,44 @@ mjx-container[display="true"] + br {
 
         
             
-    <div id="gitalk-container"></div>
-    <script data-swup-reload-script
-            src="//cdn.staticfile.org/gitalk/1.8.0/gitalk.min.js"></script>
-    <script data-swup-reload-script>
-
-        function loadGitalk() {
-            let __gitalk__pathname = decodeURI(location.pathname);
-            const __gitalk__pathnameLength = __gitalk__pathname.length;
-            const __gitalk__pathnameMaxLength = 50;
-            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
-                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+    <div id="giscus-container"></div>
+    <script data-swup-reload-script defer>
+        async function loadGiscus() {
+            const giscusConfig = {
+                'src': 'https://giscus.app/client.js',
+                'data-repo': 'Luorance/frominfinity',
+                'data-repo-id': 'R_kgDOMg2xDQ',
+                'data-category': 'Announcements',
+                'data-category-id': 'DIC_kwDOMg2xDc4Chj4q',
+                'data-mapping': 'pathname',
+                'data-strict': '0',
+                'data-reactions-enabled': '1',
+                'data-emit-metadata': '1',
+                'data-theme': 'preferred_color_scheme',
+                'data-lang': 'en',
+                'data-input-position': 'bottom',
+                'data-loading': 'lazy',
+                'crossorigin': 'anonymous',
+                'async': true
             }
-
-            try {
-                Gitalk && new Gitalk({
-                    clientID: 'Ov23liJQvPIac7wTiI3t',
-                    clientSecret: '546652a34ea7ba780dfe54a9087aee94d80d232e',
-                    repo: 'FromInf_Comments',
-                    owner: 'Luorance',
-                    admin: ['Luorance'],
-                    id: __gitalk__pathname,
-                    language: 'en',
-                    proxy: 'https://github.com/login/oauth/access_token'
-                }).render('gitalk-container');
-
-            } catch (e) {
-                window.Gitalk = null;
+            const giscusScript = document.createElement('script');
+            for (const key in giscusConfig) {
+                giscusScript.setAttribute(key, giscusConfig[key]);
             }
+            document.getElementById('giscus-container').appendChild(giscusScript);
         }
-
         if ('true') {
-            const loadGitalkTimeout = setTimeout(() => {
-                loadGitalk();
-                clearTimeout(loadGitalkTimeout);
+            let loadGiscusTimeout = setTimeout(() => {
+                loadGiscus();
+                clearTimeout(loadGiscusTimeout);
             }, 1000);
         } else {
-            window.addEventListener('DOMContentLoaded', loadGitalk);
+            document.addEventListener('DOMContentLoaded', loadGiscus);
         }
     </script>
 
 
-
+        
         
     
 </div>
