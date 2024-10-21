@@ -13,17 +13,17 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://frominfinity.zeabur.app/2024/08/08/mm2_线性规划/"/>
+    <link rel="canonical" href="https://frominfinity.zeabur.app/2024/08/08/mm2_线性规划(updating)/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="示例及定义例1.1   某机床厂生产甲、乙两种机床，每台销售后的利润分别为 4千元与 3 千元。生产甲机床需用A、B机器加工，加工时间分别为每台 2 小时和 1 小时；生产乙机床需用A、B、C三种机器加工，加工时间为每台各一小时。若每天可用于加工的机器时数分别为A机器 10 小时、B机器 8小时和C机器7小时，问该厂应生产甲、乙机床各几台，才能使总利润最大?   目标函数及约束条件均为线性函数，故">
+        <meta name="description" content="示例及定义例1.1  某机床厂生产甲、乙两种机床，每台销售后的利润分别为 4千元与 3 千元。生产甲机床需用A、B机器加工，加工时间分别为每台 2 小时和 1 小时；生产乙机床需用A、B、C三种机器加工，加工时间为每台各一小时。若每天可用于加工的机器时数分别为A机器 10 小时、B机器 8小时和C机器7小时，问该厂应生产甲、乙机床各几台，才能使总利润最大?   目标函数及约束条件均为线性函数，故被">
 <meta property="og:type" content="article">
-<meta property="og:title" content="&lt;MM&gt;线性规划">
-<meta property="og:url" content="https://frominfinity.zeabur.app/2024/08/08/MM2_%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92/index.html">
+<meta property="og:title" content="\[MM\]线性规划">
+<meta property="og:url" content="https://frominfinity.zeabur.app/2024/08/08/MM2_%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92(Updating)/index.html">
 <meta property="og:site_name" content="From Infinity">
-<meta property="og:description" content="示例及定义例1.1   某机床厂生产甲、乙两种机床，每台销售后的利润分别为 4千元与 3 千元。生产甲机床需用A、B机器加工，加工时间分别为每台 2 小时和 1 小时；生产乙机床需用A、B、C三种机器加工，加工时间为每台各一小时。若每天可用于加工的机器时数分别为A机器 10 小时、B机器 8小时和C机器7小时，问该厂应生产甲、乙机床各几台，才能使总利润最大?   目标函数及约束条件均为线性函数，故">
+<meta property="og:description" content="示例及定义例1.1  某机床厂生产甲、乙两种机床，每台销售后的利润分别为 4千元与 3 千元。生产甲机床需用A、B机器加工，加工时间分别为每台 2 小时和 1 小时；生产乙机床需用A、B、C三种机器加工，加工时间为每台各一小时。若每天可用于加工的机器时数分别为A机器 10 小时、B机器 8小时和C机器7小时，问该厂应生产甲、乙机床各几台，才能使总利润最大?   目标函数及约束条件均为线性函数，故被">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic/202408081752275.png">
 <meta property="og:image" content="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic%2F202408031818179.png">
@@ -51,6 +51,7 @@
 <meta property="article:modified_time" content="2024-08-07T16:00:00.000Z">
 <meta property="article:author" content="Luorance">
 <meta property="article:tag" content="Mathmatical_Model">
+<meta property="article:tag" content="数学建模算法与应用(司守奎)">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic/202408081752275.png">
     
@@ -64,7 +65,7 @@
     
     <title>
         
-            &lt;MM&gt;线性规划 -
+            \[MM\]线性规划 -
         
         From Infinity
     </title>
@@ -488,15 +489,15 @@ mjx-container[display="true"] + br {
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">10</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -523,10 +524,10 @@ mjx-container[display="true"] + br {
             
                 
                 
-                <img src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic/deepsea.jpg" alt="&lt;MM&gt;线性规划" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
+                <img src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic/deepsea.jpg" alt="\[MM\]线性规划" class="w-full h-60 sm:h-72 md:h-80 object-cover sm:rounded-t-large dark:brightness-75"/>
                 
                 <div class="w-full flex items-center absolute bottom-0 justify-start">
-                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">&lt;MM&gt;线性规划</h1>
+                    <h1 class="article-title-cover text-center mx-6 my-6 text-second-text-color bg-background-color-transparent px-4 py-3 text-3xl sm:text-4xl md:text-5xl font-semibold backdrop-blur-lg rounded-xl border border-border-color ">\[MM\]线性规划</h1>
                 </div>
             
             </div>
@@ -574,16 +575,6 @@ mjx-container[display="true"] + br {
                     
                     
                 
-                    
-                        
-                            <li>></li>
-                        
-                        <li>
-                            <a href="/categories/Mathmatical-Model/Learning/">Learning</a>&nbsp;
-                        </li>
-                    
-                    
-                
             </ul>
         </span>
     
@@ -596,6 +587,10 @@ mjx-container[display="true"] + br {
                         <a href="/tags/Mathmatical-Model/">Mathmatical_Model</a>&nbsp;
                     </li>
                 
+                    <li>
+                        | <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8-%E5%8F%B8%E5%AE%88%E5%A5%8E/">数学建模算法与应用(司守奎)</a>&nbsp;
+                    </li>
+                
             </ul>
         </span>
     
@@ -603,7 +598,7 @@ mjx-container[display="true"] + br {
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>441 字</span>
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>445 字</span>
         </span>
     
     
@@ -627,7 +622,7 @@ mjx-container[display="true"] + br {
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h2 id="示例及定义"><a href="#示例及定义" class="headerlink" title="示例及定义"></a>示例及定义</h2><p>例1.1 </p>
+            <h2 id="示例及定义"><a href="#示例及定义" class="headerlink" title="示例及定义"></a>示例及定义</h2><p>例1.1</p>
 <blockquote>
 <p>某机床厂生产甲、乙两种机床，每台销售后的利润分别为 4千元与 3 千元。生产甲机床需用A、B机器加工，加工时间分别为每台 2 小时和 1 小时；生产乙机床需用A、B、C三种机器加工，加工时间为每台各一小时。若每天可用于加工的机器时数分别为A机器 10 小时、B机器 8小时和C机器7小时，问该厂应生产甲、乙机床各几台，才能使总利润最大?</p>
 </blockquote>
@@ -636,7 +631,7 @@ mjx-container[display="true"] + br {
 <p>在解决实际问题时，把问题归结成一个线性规划数学模型是很重要的一步，往往也是很困难的一步，模型建立得是否恰当，直接影响到求解。而选适当的决策变量，是我们建立有效模型的关键之一。</p>
 <h2 id="解的概念"><a href="#解的概念" class="headerlink" title="解的概念"></a>解的概念</h2><p><img lazyload="" src="/images/loading.svg" data-src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic%2F202408031818179.png"></p>
 <p><img lazyload="" src="/images/loading.svg" data-src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic%2F202408031818145.png"></p>
-<h2 id="Matlab标准型"><a href="#Matlab标准型" class="headerlink" title="Matlab标准型"></a>Matlab标准型</h2><p><img lazyload="" src="/images/loading.svg" data-src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic%2F202408031818357.png"></p>
+<h2 id="线性规划Matlab标准型"><a href="#线性规划Matlab标准型" class="headerlink" title="线性规划Matlab标准型"></a>线性规划Matlab标准型</h2><p><img lazyload="" src="/images/loading.svg" data-src="https://pic-1328468418.cos.ap-beijing.myqcloud.com/pic%2F202408031818357.png"></p>
 <blockquote>
 <p>linprog只能求解最小值，如果求最大值须在目标函数之前添加 <code>-</code>(负号)  </p>
 </blockquote>
@@ -667,7 +662,7 @@ mjx-container[display="true"] + br {
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> &lt;MM&gt;线性规划</li>
+        <li><strong>标题:</strong> \[MM\]线性规划</li>
         <li><strong>作者:</strong> Luorance</li>
         <li><strong>创建于
                 :</strong> 2024-08-08 00:00:00</li>
@@ -678,7 +673,7 @@ mjx-container[display="true"] + br {
             </li>
         
         <li>
-            <strong>链接:</strong> https://frominfinity.zeabur.app/2024/08/08/MM2_线性规划/
+            <strong>链接:</strong> https://frominfinity.zeabur.app/2024/08/08/MM2_线性规划(Updating)/
         </li>
         <li>
             <strong>
@@ -701,6 +696,10 @@ mjx-container[display="true"] + br {
                 
                     <li class="tag-item mx-0.5">
                         <a href="/tags/Mathmatical-Model/">#Mathmatical_Model</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E7%AE%97%E6%B3%95%E4%B8%8E%E5%BA%94%E7%94%A8-%E5%8F%B8%E5%AE%88%E5%A5%8E/">#数学建模算法与应用(司守奎)</a>&nbsp;
                     </li>
                 
             </ul>
@@ -808,8 +807,8 @@ mjx-container[display="true"] + br {
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">目录</div>
-        <div class="page-title">&lt;MM&gt;线性规划</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%E5%8F%8A%E5%AE%9A%E4%B9%89"><span class="nav-text">示例及定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">解的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Matlab%E6%A0%87%E5%87%86%E5%9E%8B"><span class="nav-text">Matlab标准型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-text">例题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AC%E5%8C%96%E4%B8%BA%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">转化为线性规划的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E8%A7%84%E5%AE%9A%E5%8F%8A%E5%9F%BA%E6%9C%AC%E5%81%87%E8%AE%BE"><span class="nav-text">符号规定及基本假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%BB%BA%E7%AB%8B"><span class="nav-text">模型建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90"><span class="nav-text">模型分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%B1%82%E8%A7%A3"><span class="nav-text">模型求解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%83%E4%B9%A0"><span class="nav-text">练习</span></a></li></ol>
+        <div class="page-title">\[MM\]线性规划</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A4%BA%E4%BE%8B%E5%8F%8A%E5%AE%9A%E4%B9%89"><span class="nav-text">示例及定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="nav-text">解的概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92Matlab%E6%A0%87%E5%87%86%E5%9E%8B"><span class="nav-text">线性规划Matlab标准型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-text">例题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AC%E5%8C%96%E4%B8%BA%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">转化为线性规划的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE"><span class="nav-text">题目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E8%A7%84%E5%AE%9A%E5%8F%8A%E5%9F%BA%E6%9C%AC%E5%81%87%E8%AE%BE"><span class="nav-text">符号规定及基本假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%BB%BA%E7%AB%8B"><span class="nav-text">模型建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90"><span class="nav-text">模型分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E6%B1%82%E8%A7%A3"><span class="nav-text">模型求解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%83%E4%B9%A0"><span class="nav-text">练习</span></a></li></ol>
 
     </div>
 </div>
@@ -842,11 +841,11 @@ mjx-container[display="true"] + br {
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 8 篇文章
+                        共撰写了 7 篇文章
                     </span>
                     
                         <span>
-                            共 49.3k 字
+                            共 47.3k 字
                         </span>
                     
                 </p>
